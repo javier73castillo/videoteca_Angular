@@ -1,0 +1,14 @@
+<div class="container-videos">
+    <div class="category">
+            <div class="container-category">
+                 <div class="video" *ngFor="let item of rock" >
+                           
+                            <iframe width="320" height="215" [src]="item.url | safe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h1>{{item.title}}</h1>
+                            <p>{{item.description}}</p>
+                    </div>
+                    
+            </div>
+    </div> 
+    
+</div>
